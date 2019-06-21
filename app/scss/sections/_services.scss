@@ -1,0 +1,210 @@
+/*------------------------------------*\
+  #SERVICES
+\*------------------------------------*/
+
+// Colors
+$bg-color: #f6f7f9;
+$dot-color: rgba(57, 57, 58, 0.2);
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 18px;
+
+.services {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+  background-size: $dot-space $dot-space;
+  overflow: hidden;
+  z-index: 1;
+  
+  @media (max-width: 576px) {
+    padding-top: 360px;
+  }
+
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    padding-top: 260px;
+  }
+}
+
+.services-title {
+  margin-bottom: 40px;
+
+  @media (min-width: 992px) {
+    margin-bottom: 50px;
+  }
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-left: -8px;
+  margin-right: -8px;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.services-item {
+  width: 100%;
+  padding: 8px;
+
+  @media (min-width: 350px) {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    flex-basis: 33.333333%;
+    max-width: 33.333333%;
+    padding: 15px;
+  }
+}
+
+.services-item__content {
+  height: 100%;
+  min-height: 230px;
+  padding: 42px 20px 25px 20px;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 11.88px 0.12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $blue;
+    box-shadow: 0px 3px 14.85px 0.15px rgba(0, 0, 0, 0.17);
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.services-item__icon {
+  display: inline-block;
+  margin-bottom: 36px;
+
+  &--electronics {
+    width: 70px;
+    height: 70px;
+    background: url(../img/icons/electronics.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--engine {
+    width: 91px;
+    // height: 60px;
+    height: 70px;
+    background: url(../img/icons/engine.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--gearbox {
+    width: 82px;
+    height: 70px;
+    background: url(../img/icons/gearbox.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--rudder {
+    width: 70px;
+    height: 70px;
+    background: url(../img/icons/rudder.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--pump {
+    width: 80px;
+    height: 70px;
+    background: url(../img/icons/pump.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--fuel {
+    width: 59px;
+    height: 70px;
+    background: url(../img/icons/fuel.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--turbine {
+    width: 70px;
+    height: 70px;
+    background: url(../img/icons/turbine.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--chassis {
+    width: 85px;
+    // height: 60px;
+    height: 70px;
+    background: url(../img/icons/chassis.svg) no-repeat 50% 50%/cover;
+  }
+
+  &--diagnostics {
+    width: 75px;
+    height: 70px;
+    background: url(../img/icons/diagnostics.svg) no-repeat 50% 50%/cover;
+  }
+}
+
+.services-item__text {
+  display: block;
+  text-transform: uppercase;
+  font-size: rem(14);
+  line-height: 1.4;
+
+  @media (min-width: 768px) {
+    font-size: rem(18);
+  }
+}
+
+.services-pic {
+  position: absolute;
+  display: none;
+
+  @media (min-width: 576px) {
+    display: block;
+  }
+
+  &--tl {
+    transform: scale(0.8);
+    top: -60px;
+    left: -10px;
+  }
+
+  &--tr {
+    transform: scale(0.8);
+    top: -45px;
+    right: -20px;
+  }
+
+  @media (min-width: 1280px) {
+    &--tl {
+      transform: scale(1);
+    }
+  
+    &--tr {
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &--tl {
+      top: -38px;
+      left: 0px;
+    }
+  
+    &--tr {
+      top: -15px;
+      right: 22px;
+    }
+  }
+}

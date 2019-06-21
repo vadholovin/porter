@@ -1,0 +1,114 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.page-footer {
+  background-color: #303030;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 40px;
+  }
+}
+
+.footer-col {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.footer-col:not(:last-child) {
+
+  @media (min-width: 992px) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.footer-col-1 {
+
+  @media (min-width: 992px) {
+    flex-basis: 15%;
+    max-width: 15%;
+  }
+}
+.footer-col-2 {
+
+  @media (min-width: 992px) {
+    flex-basis: 55%;
+    max-width: 55%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    flex-basis: 59%;
+    max-width: 59%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.footer-col-3 {
+
+  @media (min-width: 992px) {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+
+  @media (min-width: 1280px) {
+    flex-basis: 26%;
+    max-width: 26%;
+  }
+
+  .button {
+    font-size: rem(14);
+  }
+  
+  .button,
+  .footer-contact__tel,
+  .footer-contact__schedule {
+
+    @media (min-width: 992px) {
+      float: right;
+      clear: both;
+    }
+    
+  }
+}
+
+.footer-text {
+  font-weight: 300;
+  line-height: 1.6;
+  color: #fff;
+
+  b {
+    font-weight: normal;
+  }
+}
+
+.footer-contact__tel {
+  display: block;
+  margin-top: 1rem;
+  font-size: rem(17);
+  color: #fff;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    margin-right: 6px;
+    background: url(../img/icons/phone.svg) no-repeat 0 0/cover;
+  }
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.footer-contact__schedule {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 300;
+  font-size: rem(14);
+  color: #ffffff;
+}

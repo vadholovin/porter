@@ -1,0 +1,103 @@
+/*------------------------------------*\
+  #CONTACTS
+\*------------------------------------*/
+
+.container--contacts {
+  position: relative;
+  min-height: 1px;
+  z-index: 2;
+}
+
+.contacts-box {
+  width: 100%;
+  max-width: 456px;
+  padding: 34px 0;
+  background-color: rgb(255, 255, 255);
+  
+
+  @media (min-width: 992px) {
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    padding: 34px;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 3px 11.88px 0.12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.contacts-title {
+  position: relative;
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-item {
+  position: relative;
+  max-width: 360px;
+  padding-left: 38px;
+  font-size: rem(18);
+
+  @media (min-width: 992px) {
+    font-size: rem(20);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  &--phone:before {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/phone-call.svg);
+  }
+
+  &--place:before {
+    width: 18px;
+    height: 22px;
+    background-image: url(../img/icons/placeholder.svg);
+  }
+}
+
+.contacts-item__phone {
+  display: block;
+}
+
+.map {
+  width: 100%;
+  height: 360px;
+  background-color: #f4f4f4;
+  z-index: 1;
+
+  @media (min-width: 992px) {
+    height: 450px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 570px;
+  }
+}

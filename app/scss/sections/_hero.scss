@@ -1,0 +1,145 @@
+/*------------------------------------*\
+  #HERO
+\*------------------------------------*/
+
+.hero {
+  position: relative;
+  background: $blue url(../img/bg-hero.jpg) no-repeat top right/ auto 100%;
+  z-index: 2;
+}
+
+.container--hero-top {
+  position: relative;
+  min-height: 600px;
+
+  @media (min-width: 992px) {
+    min-height: 580px;
+  }
+}
+
+.hero-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 680px;
+  height: 100%;
+  margin-left: -45px;
+  padding-top: 55px;
+  padding-left: 70px;
+  background-color: $blue;
+  transform: skewX(-9deg);
+  z-index: auto;
+
+  @media (min-width: 576px) {
+    padding-left: 90px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    opacity: 0.4;
+    z-index: -1;
+  }
+}
+
+.hero-content {
+  transform: skewX(9deg);
+  max-width: 570px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: rem(28);
+  line-height: 1.15;
+
+  @media (min-width: 350px) {
+    font-size: rem(32);
+  }
+
+  @media (min-width: 576px) {
+    font-size: rem(36);
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(40);
+  }
+
+  @media (min-width: 1280px) {
+    font-size: rem(46);
+  }
+
+  span {
+    padding: 6px 16px;
+    display: inline-block;
+    background-color: #fff;
+
+    @media (min-width: 992px) {
+      padding: 8px 20px;
+    }
+  }
+
+  span ~ span {
+    @media (max-width: 576px) {
+      margin-top: -12px;
+    }
+  }
+}
+
+.hero-features {
+  list-style: none;
+  padding-bottom: 60px;
+}
+
+.hero-feature {
+  position: relative;
+  padding-left: 32px;
+  font-weight: 300;
+  color: #ffffff;
+
+  @media (min-width: 350px) {
+    font-size: rem(20);
+  }
+
+  @media (min-width: 576px) {
+    padding-left: 40px;
+    font-size: rem(24);
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(28);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 30px;
+    background: url(../img/icons/medal.png) no-repeat 50% 50%/contain;
+
+    @media (min-width: 576px) {
+      width: 20px;
+    }
+  }
+}
+
+.container--hero-bottom {
+  position: relative;
+}
+

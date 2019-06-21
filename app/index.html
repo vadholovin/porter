@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <div class="page">
+
+    <header class="page-header">
+      <div class="container">
+        <div class="row">
+          <a href="/" class="header-brand">
+            <img class="header-brand__img"
+              src="img/logo-dark.png"
+              alt="логотип"
+              srcset="img/logo-dark.png 1x,
+              img/logo-dark@2x.png 1.5x,
+              img/logo-dark@2x.png 2x"
+            width="80" height="49">
+            <span class="header-brand__text">Ремонт Hyundai Porter</span>
+          </a>
+
+          <nav class="header-nav" id="header-nav">
+            <a href="#hero" class="header-nav__link">ГЛАВНАЯ</a>
+            <a href="#services" class="header-nav__link">УСЛУГИ</a>
+            <a href="#photos" class="header-nav__link">ФОТО</a>
+            <a href="#contacts" class="header-nav__link">КОНТАКТЫ</a>
+          </nav>
+
+          <div class="header-contact">
+            <a href="tel:88005553535" class="header-contact__tel">8 800 555-35-35</a>
+            <span class="header-contact__schedule">Пн-пт с 9:00 до 21:00</span>
+          </div>
+
+          <button
+            class="hamburger hamburger--spring" type="button"
+            aria-label="Menu" aria-controls="navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav__overlay"></div>
+        <div class="mobile-nav__container">
+          <div class="mobile-nav__menu" id="mobile-nav__menu">
+            <a href="#hero" class="mobile-nav__link">ГЛАВНАЯ</a>
+            <a href="#services" class="mobile-nav__link">УСЛУГИ</a>
+            <a href="#photos" class="mobile-nav__link">ФОТО</a>
+            <a href="#contacts" class="mobile-nav__link">КОНТАКТЫ</a>
+          </div>
+
+          <hr class="mobile-nav__divider">
+
+          <ul class="mobile-nav__contacts">
+            <li class="mobile-nav__contact mobile-nav__contact--phone">
+              <a href="tel:88005552222">8-800-555-22-22</a>
+              <span style="font-size:0.9em; display:block;">
+                Понедельник-Пятница:
+                <br>
+                с 9:00 до 21:00
+              </span>
+            </li>
+            <li class="mobile-nav__contact mobile-nav__contact--place">
+              г. Москва,
+              <br>
+              ул. Краснобогатырская, 42 строение 2
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main-content">
+      <section class="hero" id="hero">
+        <div class="container-fluid container--hero-top">
+          <div class="hero-box">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span>Быстрый качественный</span>
+                <br>
+                <span>ремонт Hyundai Porter</span>
+              </h1>
+
+              <ul class="hero-features">
+                <li class="hero-feature">Гарантия 1 год</li>
+                <li class="hero-feature">Квалифицированные специалисты</li>
+                <li class="hero-feature">Современное оборудование</li>
+                <li class="hero-feature">Качественные запчасти</li>
+                <li class="hero-feature">Фиксированная стоимость</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container container--hero-bottom">
+          <div class="callback" id="callback">
+            <p class="callback-heading">Заказать обратный звонок</p>
+            <form class="callback-form">
+              <label for="user-name" class="visuallyhidden">Ваше имя:</label>
+              <div class="form-control__wrapper">
+                <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя:">
+              </div>
+              <label for="user-name" class="visuallyhidden">Ваш телефон:</label>
+              <div class="form-control__wrapper">
+                <input type="text" class="form-control" name="user-phone" id="user-phone" placeholder="Ваш телефон:">
+              </div>
+              <input type="submit" class="button button-primary" value="Записаться на ремонт">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2 class="section-title services-title" id="services">Виды ремонта Hyundai Porter</h2>
+
+          <ul class="services-list">
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--electronics"></span>
+                <span class="services-item__text">Ремонт электроники</span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left"
+              data-aos-delay="100">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--engine"></span>
+                <span class="services-item__text">Ремонт двигателя</span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left"
+              data-aos-delay="200">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--gearbox"></span>
+                <span class="services-item__text">Ремонт кпп</span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--rudder"></span>
+                <span class="services-item__text">Ремонт рулевой</span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left"
+              data-aos-delay="100">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--pump"></span>
+                <span class="services-item__text">Ремонт ТНВД</span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left"
+              data-aos-delay="200">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--fuel"></span>
+                <span class="services-item__text">
+                  Ремонт топливной
+                  <br>
+                  аппаратуры
+                </span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--turbine"></span>
+                <span class="services-item__text">Ремонт турбины</span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form"
+              data-aos="flip-left"
+              data-aos-delay="100">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--chassis"></span>
+                <span class="services-item__text">
+                  Ремонт ходовой
+                  <br>
+                  части
+                </span>
+              </div>
+            </li>
+            <li class="services-item"
+              data-micromodal-trigger="modal-form-2"
+              data-aos="flip-left"
+              data-aos-delay="200">
+              <div class="services-item__content">
+                <span class="services-item__icon services-item__icon--diagnostics"></span>
+                <span class="services-item__text">
+                  Компьютерная
+                  <br>
+                  диагностика
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <img class="services-pic services-pic--tr" src="img/indicator-2.png" alt="">
+        <img class="services-pic services-pic--tl" src="img/key-1.png" alt="">
+      </section>
+
+
+      <section class="photos">
+        <div class="container">
+          <h2 class="section-title photos-title" id="photos">Фото в нашей мастерской</h2>
+        </div>
+
+        <div class="container-fluid container--photos">
+          <div class="photos-carousel owl-carousel">
+            <a href="img/carousel/pic-1.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-1.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-2.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-2.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-3.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-3.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-4.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-4.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-1.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-1.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-2.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-2.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-3.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-3.jpg" alt="">
+            </a>
+            <a href="img/carousel/pic-4.jpg" class="photos-item" data-fancybox="gallery">
+              <img src="img/carousel/pic-4.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="photos-carousel__nav">
+            <button class="button-prev"></button>
+            <button class="button-next"></button>
+          </div>
+        </div>
+
+        <img class="photos-pic photos-pic--tl" src="img/indicator-1.png" alt="">
+        <img class="photos-pic photos-pic--tr" src="img/key-2.png" alt="">
+      </section>
+
+
+      <section class="contacts">
+        <div class="container container--contacts">
+          <div class="contacts-box">
+            <h2 class="section-title contacts-title" id="contacts">Контакты</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item contacts-item--phone">
+                <a href="tel:88005552222" class="contacts-item__phone">8-800-555-22-22</a>
+                <span style="font-size:0.8em;">Понедельник-Пятница: с 9:00 до 21:00</span>
+              </li>
+              <li class="contacts-item contacts-item--place">
+                <span>г. Москва, ул. Краснобогатырская, 42 строение 2</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map" id="map">
+          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col footer-col-1">
+            <div class="footer-brand">
+              <img class="footer-brand__img"
+                src="img/logo-light.png"
+                width="106" height="65"
+                srcset="img/logo-light.png 1x,
+                img/logo-light@2x.png 1.5x,
+                img/logo-light@2x.png 2x"
+              alt="">
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-2">
+            <p class="footer-text">
+              <b>ЛИТ-СЕРВИС</b> — осуществляет ремонт и диагностику машин Hyundai Porter.
+              В нашем автосервисе работают плавно встроенные специалисты.
+              Ремонтируем почерневший техпаспорт по выгодным тарифам.
+            </p>
+          </div>
+
+          <div class="footer-col footer-col-3 clearfix">
+            <div class="footer-contact">
+              <button class="button button-primary" data-micromodal-trigger="modal-form">
+                Заказать обратный звонок
+              </button>
+              <a href="tel:88005553535" class="footer-contact__tel">8 800 555-35-35</a>
+              <span class="footer-contact__schedule">Пн-пт с 9:00 до 21:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+  <!-- Modals -->
+  <div class="modal modal--answer" id="modal-answer" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <button class="modal__close" aria-label="Закрыть попап" data-micromodal-close></button>
+  
+        <main class="modal__content">
+          <p class="answer-title"></p>
+          <p class="answer-text"></p>
+        </main>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal modal--form" id="modal-form" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <button class="modal__close" aria-label="Закрыть попап" data-micromodal-close></button>
+  
+        <main class="modal__content">
+          <form class="callback-form callback-form--modal">
+            <p class="callback-heading">
+              Быстрый ремонт
+              hyundai porter
+            </p>
+            <label for="user-name" class="visuallyhidden">Ваше имя:</label>
+            <div class="form-control__wrapper">
+              <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя:">
+            </div>
+            <label for="user-name" class="visuallyhidden">Ваш телефон:</label>
+            <div class="form-control__wrapper">
+              <input type="text" class="form-control" name="user-phone" id="user-phone" placeholder="Ваш телефон:">
+            </div>
+            <input type="submit" class="button button-primary" value="Записаться на ремонт">
+          </form>
+        </main>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal modal--form" id="modal-form-2" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <button class="modal__close" aria-label="Закрыть попап" data-micromodal-close></button>
+  
+        <main class="modal__content">
+          <form class="callback-form callback-form--modal">
+            <p class="callback-heading">
+              Комплексная диагностика hyundai porter
+            </p>
+            <label for="user-name" class="visuallyhidden">Ваше имя:</label>
+            <div class="form-control__wrapper">
+              <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя:">
+            </div>
+            <label for="user-name" class="visuallyhidden">Ваш телефон:</label>
+            <div class="form-control__wrapper">
+              <input type="text" class="form-control" name="user-phone" id="user-phone" placeholder="Ваш телефон:">
+            </div>
+            <input type="submit" class="button button-primary" value="записаться на диагностику">
+          </form>
+        </main>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <button class="button-trigger" data-micromodal-trigger="modal-form"></button>
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+  <script src="libs/owl.carousel/owl.carousel.min.js"></script>
+  <script src="libs/micromodal/micromodal.min.js"></script>
+  <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

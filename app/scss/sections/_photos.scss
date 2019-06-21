@@ -1,0 +1,144 @@
+/*------------------------------------*\
+  #PHOTOS
+\*------------------------------------*/
+
+.photos {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-top: 1px solid #e8e8e8;
+  z-index: 5;
+
+  @media (min-width: 992px) {
+    padding-bottom: 80px;
+  }
+}
+
+.photos-title {
+  margin-bottom: 50px;
+}
+
+.container--photos {
+  position: relative;
+}
+
+.photos-carousel {
+
+  .owl-item {
+    position: relative;
+    max-height: 435px;
+  }
+}
+
+.photos-item {
+  outline: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons/zoom.png) no-repeat 50% 50%/cover;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+    @media (min-width: 992px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &:hover {
+
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.photos-carousel__nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+  z-index: 1;
+
+  .button-prev,
+  .button-next {
+    display: inline-block;
+    width: 56px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background-color: #f9f9f9;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    outline: 0;
+
+    @media (min-width: 992px) {
+      width: 70px;
+      height: 50px;
+    }
+
+    &:focus {
+      opacity: 0.9;
+    }
+  }
+
+  .button-prev {
+    border-right: 1px solid #e6e6e6;
+    background-image: url(../img/icons/prev.png);
+  }
+
+  .button-next {
+    background-image: url(../img/icons/next.png);
+  }
+}
+
+.photos-pic {
+  position: absolute;
+  display: none;
+
+  @media (min-width: 576px) {
+    display: block;
+  }
+
+  &--tl {
+    transform: scale(0.8);
+    top: -160px;
+    left: -24px;
+  }
+
+  &--tr {
+    transform: scale(0.8);
+    top: -80px;
+    right: 0px;
+  }
+
+  @media (min-width: 1280px) {
+    &--tl {
+      transform: scale(1);
+    }
+  
+    &--tr {
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &--tl {
+      top: -174px;
+      left: 45px;
+    }
+  
+    &--tr {
+      top: -100px;
+      right: 0px;
+    }
+  }
+}

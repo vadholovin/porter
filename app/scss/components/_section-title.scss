@@ -1,0 +1,34 @@
+/*------------------------------------*\
+  #SECTION-TITLE
+\*------------------------------------*/
+
+.section-title {
+  font-weight: 600;
+  font-size: rem(28);
+  z-index: 1;
+
+  @media (max-width: 991.98px) {
+    position: relative;
+    padding-bottom: 16px;
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(32);
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 75px;
+    height: 3px;
+    margin-right: 22px;
+    background-color: $blue;
+  }
+}
